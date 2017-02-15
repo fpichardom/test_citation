@@ -1,0 +1,35 @@
+\documentclass{article}
+
+\usepackage{filecontents}
+
+\begin{filecontents*}{references.bib}
+	
+	@article{macia2011,
+		title = {Palm {{Uses}} in {{Northwestern South America}}: {{A Quantitative Review}}},
+		volume = {77},
+		doi = {10.1007/s12229-011-9086-8},
+		timestamp = {2017-01-14T20:38:35Z},
+		number = {4},
+		journaltitle = {The Botanical Review},
+		shortjournal = {Bot. Rev.},
+		author = {Mac{\'\i}a, Manuel J and Armesilla, Pedro J and C{\'a}mara-Leret, Rodrigo and Paniagua-Zambrana, Narel and Villalba, Soraya and Balslev, Henrik and Pardo-de-Santayana, Manuel},
+		date = {2011},
+		pages = {462--570}
+	}
+	
+\end{filecontents*}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{csquotes}
+\usepackage[style=authoryear]{biblatex}
+\addbibresource{references.bib}
+
+
+\begin{document}
+	
+This is a test citation \parencite{macia2011}
+
+It works if is written in the document: Mac{\'\i}a	
+\printbibliography
+	
+\end{document}
